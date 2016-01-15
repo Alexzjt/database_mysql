@@ -1,0 +1,26 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  pool: 2
+  reconnect: true
+  database: lab
+  host: localhost
+  username: root
+  password:
+  write_timeout: 5
+  read_timeout: 3
+  wait_timeout: 20
+
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  pool: 2
+  reconnect: true
+  host: localhost
+  database: lab
+  username: root
+  password:
+  write_timeout: 5
+  read_timeout: 3
+  wait_timeout: 20
