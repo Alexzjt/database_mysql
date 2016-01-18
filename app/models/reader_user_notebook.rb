@@ -5,7 +5,7 @@ class ReaderUserNotebook < ActiveRecord::Base
     notebook_list_hash =Oj.load(notebook_obj.list)
     book_id = ReaderUser.find(notebook_obj.user_id).book
     book_word_hash = ReaderPageWord.book_word_frequency_statistics(book_id)
-    word_frequency_hash = WordFrequencyList.word_frequency_hash
+    word_frequency_hash = OneHundredThousandWordFrequencyList.word_frequency_hash
     array = notebook_list_hash.keys
     array.sort! do |a, b|
       begin
